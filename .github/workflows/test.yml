@@ -1,0 +1,30 @@
+name: Test
+
+# Installs the formula from this tap the way a user would, on macOS and Linux,
+# and runs it.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+      - uses: actions/checkout@v4
+      - name: Check the formula's style
+        run: brew style Formula/packetshark.rb
+      - name: Install from the tap
+        run: brew install DevSingh05/tap/packetshark
+      - name: Run it
+        run: |
+          packetshark --version
+          sharkd -v | head -1
+      - name: Homebrew's own test of the formula
+        run: brew test DevSingh05/tap/packetshark
