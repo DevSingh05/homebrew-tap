@@ -1,7 +1,7 @@
 class Packetshark < Formula
   desc "Terminal UI for Wireshark, powered by sharkd"
   homepage "https://github.com/DevSingh05/packetshark"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   # packetshark drives sharkd, which ships with Wireshark's command-line tools.
@@ -9,23 +9,23 @@ class Packetshark < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-aarch64-apple-darwin.tar.gz"
-      sha256 "990739bf1e3f151ebae5aa10650170359be9050683563fbd39d546fca3d46553"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.2.0/packetshark-aarch64-apple-darwin.tar.gz"
+      sha256 "1185818abb6ddb1e6ea6addb65acca0d2ed6df423b85d6cb41050072432dda34"
     end
     on_intel do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-x86_64-apple-darwin.tar.gz"
-      sha256 "85e036367db35b6d2f95e567e69a919999e8b9d4a644bac2dafc31c451a68f72"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.2.0/packetshark-x86_64-apple-darwin.tar.gz"
+      sha256 "98d8bc0386276eb37e03699300a3b5902643262c1825dc2d5f7d61773b8793bb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "b17710424ba43d045a82462901c9ea162237f747fdf4a32361feab8d6c7fa422"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.2.0/packetshark-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "a222a3bc4677debee6ece8f1c48e072690cc488c91501e25ddde25c6cfba0fcb"
     end
     on_intel do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "c6d01b6d41ab5b479b91b78904bb0ecb94217bdb80c0ed444ecd7db4cdb046df"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.2.0/packetshark-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "5587f1c14e1ccca3777fbf9c54ad0b59dcb9e8ce73f1b99742febf8ffbacd487"
     end
   end
 
