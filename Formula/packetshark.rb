@@ -1,7 +1,7 @@
 class Packetshark < Formula
   desc "Terminal UI for Wireshark, powered by sharkd"
   homepage "https://github.com/DevSingh05/packetshark"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   # packetshark drives sharkd, which ships with Wireshark's command-line tools.
@@ -9,23 +9,23 @@ class Packetshark < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.0/packetshark-aarch64-apple-darwin.tar.gz"
-      sha256 "f90d05c340f0c9aafb58feae7aaa1b6bd30775ea1b7aed666bfeab7b6f91a9d8"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-aarch64-apple-darwin.tar.gz"
+      sha256 "990739bf1e3f151ebae5aa10650170359be9050683563fbd39d546fca3d46553"
     end
     on_intel do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.0/packetshark-x86_64-apple-darwin.tar.gz"
-      sha256 "f9bca0651ffe5b8431c9f05a9efb1bb2360769e8fd7f3b04058a256b016d2a43"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-x86_64-apple-darwin.tar.gz"
+      sha256 "85e036367db35b6d2f95e567e69a919999e8b9d4a644bac2dafc31c451a68f72"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.0/packetshark-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "9300b0ec41d4c4b30ca532c48b6c29f7cf082d1d89f8c8c0b887986eb57e390a"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "b17710424ba43d045a82462901c9ea162237f747fdf4a32361feab8d6c7fa422"
     end
     on_intel do
-      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.0/packetshark-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "561f599dae9bd709e80b2bc442345d34709492874fd1f4dd38c2a3253259b7db"
+      url "https://github.com/DevSingh05/packetshark/releases/download/v0.1.1/packetshark-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "c6d01b6d41ab5b479b91b78904bb0ecb94217bdb80c0ed444ecd7db4cdb046df"
     end
   end
 
