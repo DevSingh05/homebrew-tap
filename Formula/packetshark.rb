@@ -1,7 +1,6 @@
 class Packetshark < Formula
   desc "Terminal UI for Wireshark, powered by sharkd"
   homepage "https://github.com/DevSingh05/packetshark"
-  version "0.3.0"
   license "MIT"
 
   # packetshark drives sharkd, which ships with Wireshark's command-line tools.
